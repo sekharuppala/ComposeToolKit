@@ -5,21 +5,16 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.material.icons.filled.Add  // ← ఇది ఉందా check చేయండి
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Add
 import androidx.compose.material3.Icon
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.Column import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.graphics.Color
@@ -42,7 +37,7 @@ fun ButtonExample() {
             Spacer(modifier = Modifier.height(30.dp))
         }
     }
-}//////// Basic Button Example//////
+}
 
 
 @Composable
@@ -62,7 +57,7 @@ fun ButtonWithModifier() {
         Spacer(modifier = Modifier.height(30.dp))
 
     }
-} ///////////////Button With Modifier//////////
+}
 
 
 //@Composable
@@ -76,7 +71,7 @@ fun ButtonWithModifier() {
 //        Text("రద్దు చేయి")
 //    }
 //
-//}///////Button WITH Modifier////
+//}
 
 
 @Composable
@@ -92,7 +87,7 @@ fun ButtonWithColors() {
 
     ) {
         Text("రద్దు చేయి")
-    }/////////Button With Colors///////
+    }
 }
 
 @Composable
@@ -121,7 +116,7 @@ fun ButtonWithShape() {
 
 
 
-}////////Button With Shape////
+}
 
 
 @Composable
@@ -141,7 +136,7 @@ fun ButtonWithIcon() {
         Text("Button")
 
 
-    }//////Button With Image//////
+    }
 }
 
 
