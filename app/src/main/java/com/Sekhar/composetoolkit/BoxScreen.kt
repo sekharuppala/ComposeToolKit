@@ -36,45 +36,91 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 
 
-
 @Preview
 @Composable
-fun BoxExample() {
+fun Box1() {
     Box(
         modifier = Modifier
             .padding(30.dp)
             .background(Color.LightGray)
-            .fillMaxWidth(),
+            .fillMaxWidth()
+            .height(145.dp),
         contentAlignment = Alignment.Center
 
 
     ) {
-        Column() {
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
 
             Image(
-                painter = painterResource(id = R.drawable.kotlin),
+                painter = painterResource(id = R.drawable.visual_studio),
                 contentDescription = "null",
                 modifier = Modifier
-                    .size(80.dp)
-                    .padding(10.dp)
+                    .size(40.dp)
             )
-            Spacer(modifier = Modifier.height(30.dp))
-
 
 
             Button(
                 onClick = {},
-                modifier = Modifier.padding(45.dp),
-                shape = RoundedCornerShape(16.dp),
+                modifier = Modifier.padding(25.dp),
+                shape = RoundedCornerShape(18.dp),
                 colors = ButtonDefaults.buttonColors(
                     containerColor = Color.Magenta,
                     contentColor = Color.White,
                 )
             ) {
                 Text(
-                    text = "Hello World",
-                    modifier = Modifier
-                        .padding(start = 50.dp, end = 60.dp)
+                    text = "Start",
+
+
+                    )
+
+            }
+        }
+    }
+}
+
+
+@Preview
+@Composable
+fun Box2() {
+    Box(
+        modifier = Modifier
+            .padding(30.dp)
+            .background(Color.LightGray)
+            .fillMaxWidth()
+            .height(145.dp),
+        contentAlignment = Alignment.Center
+
+
+    ) {
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally,
+
+        ) {
+
+            Image(
+                painter = painterResource(id = R.drawable.img),
+                contentDescription = "null",
+                modifier = Modifier
+                    .size(40.dp)
+            )
+
+
+            Button(
+                onClick = {},
+                modifier = Modifier.padding(25.dp),
+                shape = RoundedCornerShape(18.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color.Magenta,
+                    contentColor = Color.White,
+                )
+            ) {
+                Text(
+                    text = "End",
+                    fontStyle = FontStyle.Italic
+
 
                 )
 
@@ -82,4 +128,5 @@ fun BoxExample() {
         }
     }
 }
+
 
