@@ -1,7 +1,6 @@
 package com.Sekhar.composetoolkit
 
-import android.R.attr.color
-import android.R.attr.text
+
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.gestures.snapping.SnapPosition
@@ -72,11 +71,20 @@ fun StateTestScreen() {
                         text = "UserName",
                         textAlign = TextAlign.Center
                     )
+                },
+
+                leadingIcon = {
+                    Image(
+                        painter = painterResource(id = R.drawable.user),
+                        contentDescription = "icon",
+                        modifier = Modifier.size(15.dp)
+                    )
                 }
 
             )
 
             Spacer(modifier = Modifier.height(60.dp))
+
 
             OutlinedTextField(
                 value = Password,
@@ -85,6 +93,14 @@ fun StateTestScreen() {
                     Text(
                         text = "Password",
                         textAlign = TextAlign.Center
+                    )
+                },
+
+                leadingIcon = {
+                    Image(
+                        painter = painterResource(id = R.drawable.password),
+                        contentDescription = "icon",
+                        modifier = Modifier.size(15.dp)
                     )
                 },
                 shape = RoundedCornerShape(16.dp)
@@ -104,7 +120,7 @@ fun StateTestScreen() {
                 },
                 leadingIcon = {
                     Image(
-                        painter = painterResource(id = R.drawable.visual_studio),
+                        painter = painterResource(id = R.drawable.img_3),
                         contentDescription = "icon",
                         modifier = Modifier.size(15.dp)
                     )
